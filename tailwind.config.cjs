@@ -21,9 +21,8 @@ module.exports = {
         "br-app-blue": "#8fc6f4",
         "br-app-magenta": "#d7a1e7",
         "br-app-cyan": "#7bc6d0",
-        "br-app-white": "#c8cdd5",
       },
     },
   },
-  plugins: [require("@tailwindcss/container-queries")],
+  plugins: [require("@tailwindcss/container-queries"), require("@tailwindcss/typography")],
 };
