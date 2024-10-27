@@ -6,14 +6,13 @@ const allBlogPosts = await getCollection("blog");
 ---
 
 <Layout title="Blog">
-  <h2 class="mb-4 text-lg">My blog</h2>
+  <h2 class="mb-4 text-lg">My blogs</h2>
   {
     allBlogPosts.map((blog) => (
       <a
         class="group flex flex-col rounded-md border p-2 transition-all hover:shadow-md hover:shadow-app-blue lg:hover:-translate-y-0.5 lg:hover:translate-x-0.5"
-        href={`blogs/${blog.slug}`}
+        href={`/blogs/${blog.slug}`}
       >
-        {blog.slug}
         <p class="capitalize group-hover:text-app-blue">{blog.data.title}</p>
         <time class="text-app-white" datetime={blog.data.date.toISOString()}>
           {blog.data.date.toDateString()}
