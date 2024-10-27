@@ -1,0 +1,11 @@
+---
+import Layout from "./layout.astro";
+import Prose from "../md/Prose.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <Prose>
+    <slot />
+  </Prose>
+</Layout>
