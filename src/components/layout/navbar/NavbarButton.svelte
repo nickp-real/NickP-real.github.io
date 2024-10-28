@@ -1,6 +1,6 @@
 <script lang="ts">
   const { name, route, page }: { name: string; route: string; page: string } = $props();
-  const isCurrentPage = $derived(page == route);
+  const isCurrentPage = $derived(page === route || (route !== "/" && page.startsWith(route)));
 </script>
 
 <a

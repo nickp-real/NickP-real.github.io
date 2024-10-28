@@ -1,5 +1,5 @@
 <script lang="ts">
-  import NavbarButton from "./navbar-button.svelte";
+  import NavbarButton from "./NavbarButton.svelte";
 
   const routes = {
     "/": "Home",

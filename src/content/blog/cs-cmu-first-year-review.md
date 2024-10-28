@@ -1,5 +1,5 @@
 ---
-layout: ../../components/layout/blog-layout.astro
+layout: ../../components/layout/BlogLayout.astro
 title: First year at Computer Science, Chiang Mai University.
 date: 2023-11-29
 ---
@@ -527,4 +527,5 @@ TA คือ Teacher Assistant ครับ เป็นผู้ช่วยอ
 ### รีวิว TA 204113 หน่อยครับ
 
 เป็นพี่ที่โคตรชิลและ Friendly สุด ๆ ครับ แบบที่ว่าไปนั่งกินข้าวนั่งคุยเป็นเพื่อนได้เลย ให้คำปรึกษาได้ดีมากด้วย กราบบบ
+
 **_ถ้ามีอะไรถาม ถามได้เรื่อย ๆ นะครับ จะเอามาเขียนต่อ_**
