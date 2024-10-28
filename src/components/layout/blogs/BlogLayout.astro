@@ -1,6 +1,10 @@
 ---
 import Layout from "@components/layout/Layout.astro";
 import Prose from "@components/md/Prose.astro";
+import type { CollectionEntry } from "astro:content";
+
+type Props = { frontmatter: CollectionEntry<"blogs">["data"] };
+
 const { frontmatter } = Astro.props;
 ---
 

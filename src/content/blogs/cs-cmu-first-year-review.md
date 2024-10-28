@@ -1,6 +1,6 @@
 ---
 title: First year at Computer Science, Chiang Mai University.
-date: 2023-11-29
+date: 2021-04-20
 ---
 
 # First year review!
