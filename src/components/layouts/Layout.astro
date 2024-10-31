@@ -1,6 +1,9 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import Navbar from "./navbar/Navbar.svelte";
+
+type Props = { title: string };
+
 const { title } = Astro.props;
 ---
 
@@ -14,7 +17,7 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body>
-    <main class="mx-auto my-8 max-w-2xl space-y-4 p-4">
+    <main class="mx-auto my-8 max-w-2xl space-y-4 p-4 print:m-0 print:max-w-none print:space-y-0 print:p-0">
       <Navbar page={Astro.url.pathname} client:visible />
       <slot>Template</slot>
     </main>

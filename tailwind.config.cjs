@@ -22,6 +22,21 @@ module.exports = {
         "br-app-magenta": "#d7a1e7",
         "br-app-cyan": "#7bc6d0",
       },
+      width: {
+        a4: "210mm",
+      },
+      height: {
+        a4: "297mm",
+      },
+      maxHeight: {
+        a4: "297mm",
+      },
+      maxWidth: {
+        a4: "210mm",
+      },
+      fontFamily: {
+        resume: ["Arial"],
+      },
     },
   },
   plugins: [require("@tailwindcss/container-queries"), require("@tailwindcss/typography")],

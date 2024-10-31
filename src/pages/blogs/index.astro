@@ -1,12 +1,13 @@
 ---
-import Blog from "@components/layout/blogs/Blog.astro";
-import Layout from "@components/layout/Layout.astro";
+import Blog from "@components/blogs/Blog.astro";
+import Layout from "@components/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const allBlogs = await getCollection("blogs");
+const title = "Nick's Blogs";
 ---
 
-<Layout title="Blog">
-  <h2 class="mb-4 text-lg">My blogs</h2>
+<Layout title={title}>
+  <h2 class="mb-4 text-lg">Nick's blogs</h2>
   {allBlogs.map((blog) => <Blog {...blog} />)}
 </Layout>
